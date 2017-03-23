@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html>
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Science</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static '/vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{% static '/vendors/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{% static '/vendors/nprogress/nprogress.css' %}" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="{% static '/vendors/iCheck/skins/flat/green.css' %}" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="{% static '/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css' %}" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="{% static '/vendors/jqvmap/dist/jqvmap.min.css' %}" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="{% static '/vendors/bootstrap-daterangepicker/daterangepicker.css' %}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{% static '/build/css/custom.min.css' %}" rel="stylesheet">
+
+    <style>
+    	body{
+    		background-color: #a2c313;
+    	}
+
+    	.nav_menu{
+    		background-color: #617916;
+    	}
+    </style>
+
+  </head>
+	<body>
+			<div class="container">
+				
+					
+					<div class="top_nav">
+	          			<div class="nav_menu ">
+		            		<nav>
+
+		            			<li class="navbar-left">
+		            				<img class="gb_6b" src="https://www.google.com/a/the-cocktail.com/images/logo.gif?alpha=1&amp;service=google_default" style="max-width:144px;max-height:60px">
+		            			</li>
+		              			<a class="navbar-brand navbar-center" href="#"><span style="color:white">Data Science</span></a>
+
+					          	<ul class="nav navbar-nav navbar-right">
+					                <li class="">
+					                </li>
+
+					                <li class="">
+					                  <a href="javascript:;" class="user-profile" data-toggle="dropdown" aria-expanded="false">
+					                    <img src="{% static '/images/profile.jpg' %}" alt=""><span style="color:white">Mario Vázquez</span></a>
+					                </li>
+				              	</ul>
+		              		</nav>
+	          			</div>
+					</div>
+
+					{% block content %}
+			   		{% endblock %}	
+				
+
+				
+			</div>
+
+	</body>
+</html>
